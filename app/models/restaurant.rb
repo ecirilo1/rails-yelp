@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class Restaurant < ApplicationRecord
-  CATEGORIES = ["chinese", "italian", "japanese", "french", "belgian"]
+  CATEGORIES = %w[chinese italian japanese french belgian].freeze
 
   has_many :reviews, dependent: :destroy
 

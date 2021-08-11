@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Ratings</h1>
+
+      <%= simple_form_for @restaurant do |f| %>
+        <%= f.input :rating %>
+        <%= f.submit class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</div>
